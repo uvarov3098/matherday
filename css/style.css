@@ -1,0 +1,67 @@
+html,
+body {
+    height: 100%
+}
+
+body {
+    margin: 0;
+    background-image: url(../img/mama.jpg);
+    background-repeat: no-repeat;
+    background-position: right bottom;
+    background-size: cover;
+    font-family: 'Bad Script', cursive;
+}
+
+.content {
+    color: brown;
+
+
+}
+
+.wrapper {
+    background-color: rgba(255, 255, 255, 0.8);
+    min-height: 100%;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation: fade 5s forwards;
+}
+
+.title {
+    text-align: center;
+    font-size: 50px;
+}
+
+.poem {
+    font-size: 30px;
+    animation: text-fade 5s forwards;
+}
+
+@keyframes fade {
+    0% {
+        background-color: white;
+        opacity: 0;
+    }
+
+    100% {
+        background-color: rgba(255, 255, 255, 0.8);
+        ;
+
+    }
+
+}
+
+@keyframes text-color {
+    0% {
+        color: rgb(171, 8, 8)
+    }
+
+    50% {
+        color: rgb(228, 11, 11);
+    }
+
+    100% {
+        color: rgb(171, 8, 8);
+    }
+}
